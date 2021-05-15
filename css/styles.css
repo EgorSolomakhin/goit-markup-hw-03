@@ -15,8 +15,39 @@
 
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
 
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 
 body {
@@ -31,6 +62,8 @@ body {
     color: var(--main-text-color);
 }
 
+
+
 /* Хеддер */
 
 .logo {
@@ -41,6 +74,9 @@ body {
     line-height: 1.19;
     color: #000000;
     text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .list {
@@ -60,6 +96,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--secondery-text-color);
     text-decoration: none;
+  
 }
 
 .site-nav .link-site-nav:hover, :focus {
@@ -80,6 +117,20 @@ body {
     color: var(--accent-color);
 }
 
+.container-headr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav-items:not(:last-child) {
+    margin-right: 50px;
+}
+
+.auth-nav-items:not(:last-child) {
+    margin-right: 50px;
+}
+
 /* Тема сайта */
 
 .title {
@@ -92,6 +143,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+   margin-top: 200px;
+    
 }
 
 .title-button {
@@ -107,8 +161,28 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
+
+    margin-top: 30px;
+    margin-bottom: 200px;
+    min-width: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+      
 }
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-section {
+  background-color: var(--secondary-background-color);
+}
+    
 
 /* Преимущества студии */
 
@@ -123,6 +197,19 @@ body {
     color: var(--secondery-text-color);
 }
 
+.advantages {
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
+
+.list-advantages:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-advantages {
+    margin-top: 10px;
+}
 /* Чем мы занимаемся и Наша команда */
 
 .title-third-section {
@@ -134,6 +221,25 @@ body {
     line-height: 1.17;
     text-align: center;
     color: var(--secondery-text-color);
+
+    margin-bottom: 50px;
+   }
+
+.container-example {
+    display: flex;
+    flex-direction: column;
+}   
+
+.list-example {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    margin-left: -30px;
+} 
+
+.list-example-icon {
+    margin-top: 50px;
+    margin-left: 30px;
 }
 
  /* Фото команды */
@@ -146,11 +252,32 @@ body {
     line-height: 1.19;
     text-align: center;
     color: var(--secondery-text-color);
+    margin-top: 30px;
 
   }
 
   .profession {
       text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+  }
+
+  .section-team {
+      background-color: #F5F4FA;
+  }
+
+  .list-team {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -50px;
+  }
+
+  .list-team-info {
+      margin-left: 30px;
+      margin-top: 50px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
   }
 
   /* Футер */
@@ -163,6 +290,7 @@ body {
     line-height: 1.19;
     color: var(--footer-text-color);
     text-decoration: none;
+   
 }
 
 .address,
@@ -175,6 +303,27 @@ body {
 .contact {
     
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+    background-color: var(--secondary-background-color);
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.list-contact {
+    margin-top: 20px;
+}
+
+.list-contact-item:not(:first-child) {
+    margin-top: 9px;
 }
 
 /*  Список фильтр кнопок в партфолио */
