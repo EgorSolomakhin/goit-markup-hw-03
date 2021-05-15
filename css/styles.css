@@ -35,6 +35,7 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .container {
@@ -62,7 +63,10 @@ body {
     color: var(--main-text-color);
 }
 
-
+.header-content {
+    border: 1px solid #ECECEC;
+    background-color: #FFFFFF;
+}
 
 /* Хеддер */
 
@@ -117,7 +121,7 @@ body {
     color: var(--accent-color);
 }
 
-.container-headr {
+.container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,7 +241,8 @@ body {
     margin-left: -30px;
 } 
 
-.list-example-icon {
+.list-example > .list-example-icon {
+    flex-basis:calc(90 / 3 - 30px);
     margin-top: 50px;
     margin-left: 30px;
 }
@@ -273,9 +278,14 @@ body {
       margin-top: -50px;
   }
 
-  .list-team-info {
+  .list-team > .list-team-info {
+      flex-basis: calc(120 / 4 -30px);
       margin-left: 30px;
       margin-top: 50px;
+
+  }
+
+  .list-team-info {
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
   }
@@ -305,7 +315,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer {
+.footer-content {
     background-color: var(--secondary-background-color);
 }
 
@@ -341,11 +351,24 @@ body {
 
     background: #F5F4FA;
     border-radius: 4px;
+
+    padding: 6px 22px;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list:hover, :focus {
     color: #FFFFFF;
     background: var(--accent-color);
+}
+
+.list-button {
+    display: flex;
+    justify-content: center;
+}
+
+.list-projects-button:not(:last-child) {
+    margin-right: 8px;
 }
 
 /* Проекты партфолио */
@@ -359,4 +382,40 @@ body {
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--secondery-text-color);
+    
 }
+
+.list-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -50px;
+   
+}
+.list-projects > .list-projects-icon {
+
+    flex-basis: calc(90 / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 50px;
+   
+}
+.list-projects-icon:nth-child(n + 4) {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.content-icon {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE; 
+}
+
+.container-projects {
+   margin-top: 50px;
+}
+
+.about-projects {
+    margin-top: 4px;
+}
+
+
