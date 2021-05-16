@@ -52,7 +52,7 @@ img {
 
 
 body {
-    background: var(--main-background-color);
+    /* background: var(--main-background-color); */
     
     font-family: roboto, sans-serif;
     font-style: normal;
@@ -66,6 +66,8 @@ body {
 .header-content {
     border: 1px solid #ECECEC;
     background-color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 /* Хеддер */
@@ -79,8 +81,7 @@ body {
     color: #000000;
     text-decoration: none;
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    
 }
 
 .list {
@@ -148,7 +149,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 
-   margin-top: 200px;
+   
     
 }
 
@@ -168,7 +169,7 @@ body {
     background-color: #2196F3;
 
     margin-top: 30px;
-    margin-bottom: 200px;
+   
     min-width: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -184,6 +185,8 @@ body {
 }
 
 .main-section {
+  padding-bottom: 200px;
+  padding-top: 200px;
   background-color: var(--secondary-background-color);
 }
     
@@ -213,6 +216,10 @@ body {
 
 .about-advantages {
     margin-top: 10px;
+}
+
+.section-advanages {
+    padding-bottom: 0px;
 }
 /* Чем мы занимаемся и Наша команда */
 
@@ -257,14 +264,13 @@ body {
     line-height: 1.19;
     text-align: center;
     color: var(--secondery-text-color);
-    margin-top: 30px;
-
+    
   }
 
   .profession {
       text-align: center;
       margin-top: 10px;
-      margin-bottom: 30px;
+     
   }
 
   .section-team {
@@ -288,6 +294,11 @@ body {
   .list-team-info {
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
+  }
+
+  .information-about-team {
+      padding-top: 30px;
+      padding-bottom: 30px;
   }
 
   /* Футер */
@@ -317,15 +328,14 @@ body {
 
 .footer-content {
     background-color: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container-footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
 }
 
 .list-contact {
@@ -365,10 +375,15 @@ body {
 .list-button {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .list-projects-button:not(:last-child) {
     margin-right: 8px;
+}
+
+.container-button {
+    justify-content: center;
 }
 
 /* Проекты партфолио */
@@ -389,29 +404,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -50px;
+    margin-top: -30px;
    
 }
 .list-projects > .list-projects-icon {
 
     flex-basis: calc(90 / 3 - 30px);
     margin-left: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
    
 }
-.list-projects-icon:nth-child(n + 4) {
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
 
 .content-icon {
     padding: 20px 24px;
     border: 1px solid #EEEEEE; 
-}
-
-.container-projects {
-   margin-top: 50px;
 }
 
 .about-projects {
